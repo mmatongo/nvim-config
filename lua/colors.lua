@@ -22,7 +22,14 @@ local ibm_dark = base16.theme_from_array {
   "ff7eb6"; "42be65"; "be95ff"; "3ddbd9";
 }
 
-base16(abyss_dark_alt, true)
+local coda_dark = base16.theme_from_array {
+  "101010"; "1f211f"; "282828"; "3b3b3b";
+  "6f6f6f"; "e8e8e8"; "e8e8e8"; "fafafa";
+  "00966f"; "008d71"; "007c7a"; "9f9f9f";
+  "2f4858"; "15596c"; "00966f"; "008d71";
+}
+
+base16(coda_dark, true)
 
 
 
