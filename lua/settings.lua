@@ -76,19 +76,31 @@ if present then
   }
 end
 
-vc [[ au BufWritePost ~/.config/mm/nvim/*.{vim,lua} so $MYVIMRC ]]
+vc [[ au BufWritePost ~/.config/nvim/*.{vim,lua} so $MYVIMRC ]]
 
 -- nvim-tree.lua
-g.nvim_tree_quit_on_open = 1
-g.nvim_tree_indent_markers = 1
+-- g.nvim_tree_quit_on_open = 1
+-- g.nvim_tree_indent_markers = 1
 g.nvim_tree_git_hl = 1
-g.nvim_tree_disable_window_picker = 1
+-- g.nvim_tree_disable_window_picker = 1
 g.nvim_tree_add_trailing = 0
 g.nvim_tree_show_icons = {
   git = 0,
   folders = 0,
   files = 0,
 }
+
+renderer = {
+  -- This option shows indent markers when folders are open.
+  indent_markers = {
+    enable = true,
+    icons = {
+      corner = '└ ',
+      edge = '│ ',
+      none = '  ',
+    },
+  },
+},
 
 vc [[ 
   autocmd Colorscheme * highlight NvimTreeNormal guibg=#030303
