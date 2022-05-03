@@ -123,9 +123,6 @@ if present then
     disable_netrw = true,
     hijack_cursor = true,
     update_cwd = true,
-    update_to_buf_dir = {
-      auto_open = false,
-    },
   }
   vim.g.nvim_tree_indent_markers = 1
 end
