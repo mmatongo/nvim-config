@@ -40,7 +40,12 @@ return require("packer").startup(function()
 	use 'tpope/vim-unimpaired'
 	use 'tpope/vim-fugitive'
 	use 'pangloss/vim-javascript'
-    use 'kyazdani42/nvim-tree.lua'
+    use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+        'kyazdani42/nvim-web-devicons',
+      }
+    }
 	use 'ap/vim-css-color'
 	-- theme
 	use 'mmatongo/abyss'
